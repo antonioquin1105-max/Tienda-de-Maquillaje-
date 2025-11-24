@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Maquillaje</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff5fb;
+            color: #333;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background: #ff77b7;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* MENÚ */
+        nav {
+            background: #ff9acb;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            padding: 12px 18px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #ff6aaa;
+        }
+
+        /* BANNER */
+        .banner {
+            background: url('https://i.imgur.com/jZuZ4wL.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 6px #000;
+            font-size: 28px;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* SECCIÓN */
+        .section {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #ff4f9b;
+        }
+
+        /* PRODUCTOS */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin: 10px 0 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #ff77b7;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVE EXTRAS */
+        @media(max-width: 600px) {
+            header { font-size: 20px; }
+            .banner { font-size: 22px; height: 180px; }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        alob_makeup
+    </header>
+
+    <nav>
+        <a href="..//trabajo de alex/Index.html">Inicio</a>
+        <a href="..//trabajo de alex/paginas extras/Contactanos.html">Contacto</a>
+    </nav>
+
+    <div class="banner">
+        Belleza que te hace brillar ✨
+    </div>
+
+    <section class="section" id="productos">
+        <h2>✨ Productos Destacados</h2>
+
+        <div class="products">
+            <div class="product-card">
+                <img src="../trabajo de alex/img/Lapiz de Labios.jpeg" alt="Labial">
+                <h3>Lapiz de Labios</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.imgur.com/GXHjzFN.jpeg" alt="Sombras">
+                <h3>Paleta de Sombras</h3>
+                <p>$14.99</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.imgur.com/Du4Mf7W.jpeg" alt="Rubor">
+                <h3>Rubor Rosado</h3>
+                <p>$7.50</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        📩 Contacto: glambeauty@gmail.com | Instagram: @glambeauty
+    </footer>
+
+</body>
+</html>
+
